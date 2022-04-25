@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  db:
+    container_name: pets-db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_USER: root 
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
